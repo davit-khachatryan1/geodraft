@@ -7,7 +7,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 
 export default function AboutSection() {
   const { t } = useLanguage();
-  const ref = useRef(null);
+  const ref = useRef(null); 
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   const values = [
