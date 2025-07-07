@@ -1,6 +1,5 @@
-'use client';
 
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { ArrowRight, Award, Users, MapPin } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';

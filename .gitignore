@@ -10,4 +10,10 @@ dist/
 # Lock files
 package-lock.json
 yarn.lock
-pnpm-lock.yaml 
+pnpm-lock.yaml
+
+# Vite
+.vite/
+
+# ESLint cache
+.eslintcache 

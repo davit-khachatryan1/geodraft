@@ -1,6 +1,6 @@
-'use client';
 
-import React, { useRef, useState } from 'react';
+
+import { useRef, useState, ChangeEvent, FormEvent } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Phone, Mail, MapPin, Send, Clock } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -17,12 +17,12 @@ export default function ContactSection() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     

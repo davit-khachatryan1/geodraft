@@ -1,6 +1,6 @@
-'use client';
 
-import React, { useRef } from 'react';
+
+import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Shield, Target, Users, Lightbulb } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';

@@ -1,6 +1,5 @@
-'use client';
 
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, ArrowUp } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
