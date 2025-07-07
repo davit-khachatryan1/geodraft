@@ -33,7 +33,7 @@ yarn-error.log*
 .env.production.local
 
 # Vercel
-.vercel
+# .vercel
 
 # TypeScript
 *.tsbuildinfo
